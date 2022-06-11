@@ -1,11 +1,14 @@
 import fs from "fs";
 import express from "express";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // Create a new express application instance
 const app=express();
 
 //port number for the server  
-const PORT="5000";
+const PORT=process.env.PORT;
 
 //dt new Date() is used to get the current date and time 
 const dt = new Date();
